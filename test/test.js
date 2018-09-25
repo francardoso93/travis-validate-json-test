@@ -10,6 +10,7 @@ var fileName = 'desunitizacaoCarga_2_000.json';
 
 //TODO: Único método que varre todos os paths, e pega as informações necessárias para validar nos testes
 //Ideal seria isso para resolver uma questão de performance, mas só de ter o código + organizado já vai ajudar muito
+//Já teria que colocar os TRUE, FALSE, dentro desse 'método único' de varredura, e na estrutura do teste só retorno se equals true
 
 let parsedOpenAPI = JSON.parse(fs.readFileSync(openAPIPath,{encoding: 'utf-8'}));
 
@@ -112,6 +113,7 @@ let parsedOpenAPI = JSON.parse(fs.readFileSync(openAPIPath,{encoding: 'utf-8'}))
   });
 
 
+    //TODO: Later
     schemaContetPath = path.join("./", 'User_3_000.json');
     let parsedSchema = JSON.parse(fs.readFileSync(schemaContetPath,{encoding: 'utf-8'}));
     describe("Schema content", function() {
