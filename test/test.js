@@ -12,6 +12,10 @@ describe("JSON Schema", function() {
   it("should have prop1 as 'provalue'", function(){
     expect(parsedData.prop1).to.equal('provalue');
   });
+
+  it("should have prop1 as 'provalue 2222'", function(){
+    expect(parsedData.prop1).to.equal('provalue');
+  });
 });
 
 describe("simple", function(){
