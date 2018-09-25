@@ -5,11 +5,15 @@ var expect = require('expect.js');
 var fs = require('fs'),
     path = require('path'),    
     filePath = path.join("./", 'sera.json');
-    let parsedData = JSON.parse(fs.readFileSync(filePath,{encoding: 'utf-8'}));
+    var parsedData = JSON.parse(fs.readFileSync(filePath,{encoding: 'utf-8'}));
 
 
 describe("JSON Schema", function() {
   it("should have prop1 as 'provalue'", function(){
+    expect(parsedData.prop1).to.equal('provalue');
+  });
+
+  it("should have prop1 as 'provalue 2222'", function(){
     expect(parsedData.prop1).to.equal('provalue');
   });
 });
