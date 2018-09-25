@@ -12,7 +12,9 @@
   },
   "author": "Codecov <hello@codecov.io>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "request-mocha": "^0.2.0"
+  },
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0",
