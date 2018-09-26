@@ -87,7 +87,11 @@ fs.readdir(dirname, function (err, filenames) {
         });
 
         describe(" - Parameters: ", function () {
+<<<<<<< HEAD
           it("should have 'pagination', 'query' and 'order' for collection endpoints", function () {
+=======
+          it("should have 'pagination', 'query' and 'orderby' for collection endpoints", function () {
+>>>>>>> d54d0b21feacd6da0250115ff77f64e845d3d4bd
             expect(pathValidatorResult.useAllRequiredParamsForCollection).to.equal(true);
           });
 
